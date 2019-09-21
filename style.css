@@ -30,6 +30,9 @@ nav {
   letter-spacing: 4px;
   font-size: 20px;
 }
+.drop-menu {
+  display: none;
+}
 nav ul {
   display: flex;
   margin-left: auto;
@@ -50,7 +53,7 @@ nav li a:hover {
 }
 .hero__text {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 2rem);
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -76,32 +79,9 @@ nav li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #3e3e3e;
   opacity: 0.6;
 }
 main {
-  background-color: #ffdfdf;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  nav ul {
-    display: none;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+  background-color: #161616;
 }
