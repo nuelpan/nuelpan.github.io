@@ -93,10 +93,14 @@ main {
   color: #28292b;
 }
 
-#about {
+#about,
+#projects,
+#contact {
   padding-top: 4rem;
 }
-#about h1 {
+#about h1,
+#projects h1,
+#contact h1 {
   text-align: center;
 }
 #about figure {
@@ -105,15 +109,47 @@ main {
   justify-content: center;
 }
 #about img {
-  border: 1px solid #28292b;
-  width: 240px;
-  clip-path: circle(100px at center);
+  /* border: 1px solid #28292b; */
+  width: 180px;
+  clip-path: circle(80px at center);
 }
 #about figcaption {
   margin-left: 2rem;
   width: 50%;
+  height: 100%;
   text-align: justify;
   font-size: 20px;
+}
+
+#projects figure {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__section-even > figcaption {
+  order: -1;
+}
+
+#projects img {
+  width: 340px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#projects figcaption {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 10%;
+  text-align: justify;
+}
+figcaption h2 {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+#projects a {
+  color: #3e3e3e;
 }
 
 footer {
@@ -123,5 +159,6 @@ footer {
   height: 4rem;
   text-align: center;
   line-height: 4rem;
-  background: #28292b;
+  color: #e3e3e3;
+  background-color: #28292b;
 }
